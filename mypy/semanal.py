@@ -751,6 +751,7 @@ class SemanticAnalyzer(NodeVisitor):
         """
 
         base_types = []  # type: List[Instance]
+        import pdb; pdb.set_trace()
         for base_expr in defn.base_type_exprs:
             try:
                 base = self.expr_to_analyzed_type(base_expr)

@@ -160,6 +160,7 @@ class TransformVisitor(NodeVisitor[Node]):
                        node.metaclass)
         new.fullname = node.fullname
         new.info = node.info
+        import pdb; pdb.set_trace()
         new.decorators = [decorator.accept(self)
                           for decorator in node.decorators]
         new.is_builtinclass = node.is_builtinclass
